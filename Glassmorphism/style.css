@@ -1,0 +1,30 @@
+/* Glassmorphism code */
+.glass {
+    background-color: rgba(82, 82, 82, 0.199);
+    backdrop-filter: blur(5px);
+}
+
+
+
+/* the rest of the code */
+body {
+    background-image: url("https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_1920%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg");
+    height: 150vh;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    color: wheat;
+}
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
