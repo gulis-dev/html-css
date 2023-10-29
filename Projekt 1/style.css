@@ -1,0 +1,83 @@
+
+body {
+    margin: 0px;
+}
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.699)), url("img/header-bg.JPG");
+    background-color: rgba(0, 0, 0, 0.952);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+}
+#bike {
+    width: 50%;
+    
+}
+#bike img {
+    width: 100vh;
+    height: 100vh;
+    float: right;
+}
+#title {
+    font-family: 'Anton', sans-serif;
+    width: 50%;
+    color: white;
+    transition-duration: 0.4s;
+}
+#title h1 {
+    padding-left: 100px;
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+#title h1 span {
+    color: #2596be;
+}
+#slide {
+    width: 100%;
+    justify-content: center;
+}
+.button {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 120px;
+    margin-top: 50px;
+    padding: 25px;
+    color: white;
+    background-color: #2596be;
+    text-decoration: none;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: rgb(255, 255, 255);
+    color: #2596be;
+}
+section {
+    font-family: 'Montserrat', sans-serif;
+}
+#about {
+    padding: 40px;
+    background-color: #deeef3;
+}
+
+#about h2 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+}
+#about-f {
+    margin-left: 17rem;
+    margin-right: 17rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-col {
+    width: 40%;
+    padding: 15px;
+}
