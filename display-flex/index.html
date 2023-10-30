@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family:'Courier New', Courier, monospace;
+            background-image: linear-gradient(rgba(51, 51, 51, 0.884), rgba(32, 32, 32, 0.918)), url("https://www-cdn.eumetsat.int/files/styles/16_9_large/s3/2022-10/scandes_norway_AdobeStock_aspot.jpg?h=d1cb525d&itok=Hf2fVwjk");
+            background-attachment: fixed;
+            color: white;
+
+        }
+        hr {
+            margin-left: auto;
+            margin-right: auto;
+            color: #0000009a;
+            border: 1px solid #0000009a;
+        }
+        h2 {
+            margin-top: 60px;
+        }
+        code {
+            background-color: #0000009a;
+            font-family: 'Courier New', monospace;
+            padding: 7px;
+            color: rgb(255, 150, 150);
+            border-radius: 5px;
+        }
+        .conteiner {
+            margin-top: 15px;
+            background-color: #0000009a;
+            height: 600px;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 76, 76);
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(66, 150, 66);
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(66, 148, 255);
+            margin: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flexbox</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Display</h2>
+            <code>display: flex;</code>
+            <div class="conteiner">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>justify-content (wyrównanie w poziomie)</h2>
+            <code>justify-content: center;</code>
+            <div class="conteiner" style="justify-content: center;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>justify-content: end;</code>
+            <div class="conteiner" style="justify-content: end;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>justify-content: space-around;</code>
+            <div class="conteiner" style="justify-content: space-around;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>justify-content: space-between;</code>
+            <div class="conteiner" style="justify-content: space-between;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>align-items (wyrównanie w pionie)</h2>
+            <code>align-items: center;</code>
+            <div class="conteiner" style="align-items: center;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>align-items: end;</code>
+            <div class="conteiner" style="align-items: end;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>center center</h2>
+            <code>align-items: end; justify-content: center;</code>
+            <div class="conteiner" style="align-items: center; justify-content: center;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>flex-direction</h2>
+            <code>flex-direction: row;</code>
+            <div class="conteiner" style="flex-direction: row;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-direction: row-reverse;</code>
+            <div class="conteiner" style="flex-direction: row-reverse;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-direction: column;</code>
+            <div class="conteiner" style="flex-direction: column;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-direction: column-reverse;</code>
+            <div class="conteiner" style="flex-direction: column-reverse;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-direction: row-reverse; justify-content: end;</code>
+            <div class="conteiner" style="flex-direction: row-reverse; justify-content: start;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>order (niebieskie mają domyślną wartość, czyli order:0)</h2>
+            <code>normal</code>
+            <div class="conteiner">
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>order: -1;</code>
+            <div class="conteiner">
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box1" style="order: -1;"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>order: 1;</code>
+            <div class="conteiner">
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+                <div class="box1" style="order: 1;"></div>
+                <div class="box3"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>align-self (dla pojedyńczego dziecka)</h2>
+            <code>align-self: center;</code>
+            <div class="conteiner">
+                <div class="box1"></div>
+                <div class="box2" style="align-self: center;"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>align-self: end;</code>
+            <div class="conteiner">
+                <div class="box1"></div>
+                <div class="box2" style="align-self: end;"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>flex-wrap</h2>
+            <code>flex-wrap: nowrap;</code>
+            <div class="conteiner" style="flex-wrap: nowrap;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-wrap: wrap;</code>
+            <div class="conteiner" style="flex-wrap: wrap;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+        <section>
+            <h2>align-content (rozmieszczenie do flex-wrap)</h2>
+            <code>flex-wrap: wrap; align-content: normal;</code>
+            <div class="conteiner" style="flex-wrap: wrap; align-content: normal;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-wrap: wrap; align-content: start;</code>
+            <div class="conteiner" style="flex-wrap: wrap; align-content: start;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <code>flex-wrap: wrap; align-content: end;</code>
+            <div class="conteiner" style="flex-wrap: wrap; align-content: end;">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div> <br><br>
+            <hr>
+        </section>
+    </main>
+</body>
+</html>
