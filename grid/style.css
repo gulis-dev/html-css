@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    background-image: linear-gradient(rgba(51, 51, 51, 0.884), rgba(32, 32, 32, 0.918)), url("https://www-cdn.eumetsat.int/files/styles/16_9_large/s3/2022-10/scandes_norway_AdobeStock_aspot.jpg?h=d1cb525d&itok=Hf2fVwjk");
+    background-attachment: fixed;
+    color: white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border: 1px solid wheat;
+}
+.child {
+    width: auto;
+    height: 20vh;
+    border: 1px solid wheat;
+}
