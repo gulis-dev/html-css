@@ -1,0 +1,26 @@
+Z czego składa się webperformance?
+    - sybkość ładowanie
+    - optymalizacja
+    - stabilność
+
+google lighthouse - narzędzie do sprawdzania optymalizacji
+webpagetest - narzędzie do sprawdzania optymalizacji
+
+Jakimi zasadami się kierować?
+    - zmierszenie wydajności aplikacji po każdej aktualizacji 
+    - wszystko co można zrobić w html i css nie należy robić w javascript
+    - otymalizować wgrywanie bibliotek np. przez Bundlephobia
+    - <script> na końcu body lub z atrybutem defer, chyba że do pokazania strony jest wymagany js np slider w js
+    - lazy loading obrazów, czyli ładowanie późniejsze ładowanie obrazów na dole strony | atrybut loading="lazy" na img
+    - responsywność obrazka (gęstość pixeli i rozdzielczość)
+    - minifikacja - są do tego narzędzia (zmniejszenie np. spacji w kodzie)
+    - lepiej pobrać bibliotekę pod nasz adres niż kożystać z zewnetznego pliku, ponieważ ze względu bezpieczeństwa np. bootstrap na każdej stronie musi się pobrać osobno, a nie        zapamiętuje go z innej strony (Najpierw musi się połączyć z serwerem -> uzgodnić z nim szyfrowanie -> pobieranie, nie wiadomo jak szybki jest serwer w danej chwili i czy on bedzie zawsze działał)
+    - nie korzystać najlepiej z importu w css
+
+Najważniejsze:
+    - Mierzenie wydajności
+    - Najpierw html -> css -> JS
+
+Gdzie sie uczyć:
+    - mozilla developer network
+    - web.dev
