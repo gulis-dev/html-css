@@ -1,5 +1,7 @@
 :root {
     --main: rgb(0, 199, 199);
+    --up: #169901;
+    --down: #BD0000;
 }
 
 *, *::before, *::after {
@@ -53,6 +55,55 @@ aside {
     border-top-left-radius: 1vw;
 
     background-color: var(--main);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 80%;
+}
+
+button {
+    width: 100%;
+    height: 3.7vw;
+    border: none;
+    background-color: var(--main);
+    
+}
+.avatar {
+    height: 3.5vw;
+    width: 3.5vw;
+    border-radius: 50%;
+    margin-bottom: 2vw;
+}
+.icon {
+    height: 1.5vw;
+    width: 1.5vw;
+}
+button:hover {
+    transition-duration: 0.3s;
+    background-color: rgb(30, 219, 219);
+}
+
+.active {
+    background-color: rgb(2, 190, 190);
+}
+
+#quit {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+#quit img {
+    height: 1vw;
+    width: 1vw;
 }
 
 main {
@@ -138,9 +189,41 @@ section {
         width: 100%;
     }
 
+.separator {
+    width: 0;
+    height: 100%;
+    border: 1px solid rgb(180, 180, 180);
+    margin: 1vw;
+}
 
 #balance {
     margin: 0;
     
     font-size: 2.5vw;
 }
+#favorite {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    #favorite img {
+        margin-bottom: -0.2vw;
+        height: 1.7vw;
+    }
+    #favorite mark {
+        text-align: center;
+        font-size: 1.7vw;
+        background-color: white;
+    }
+        .up {
+            color: var(--up);
+            display: inline;
+        }
+        .down {
+            color: var(--down);
+            display: inline;
+        }
+    #favorite span {
+        font-size: 1vw;
+        text-align: center;
+    }
