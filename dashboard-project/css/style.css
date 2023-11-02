@@ -2,6 +2,10 @@
     --main: rgb(0, 199, 199);
     --up: #169901;
     --down: #BD0000;
+    --purple: rgb(223, 88, 223, 0.6);
+    --yellow: rgb(250, 232, 68, 0.6);
+    --blue: rgba(20, 228, 228, 0.6);
+    --gray: rgb(153, 153, 153);
 }
 
 *, *::before, *::after {
@@ -192,7 +196,7 @@ section {
 .separator {
     width: 0;
     height: 100%;
-    border: 1px solid rgb(180, 180, 180);
+    border: 1px solid var(--gray);
     margin: 1vw;
 }
 
@@ -227,3 +231,37 @@ section {
         font-size: 1vw;
         text-align: center;
     }
+
+.chart1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 90%;
+    height: 70%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid var(--gray);
+    border-left: 2px solid var(--gray);
+}
+    .chart-block {
+        width: 15%;
+        border-top-right-radius: 0.2vw;
+        border-top-left-radius: 0.2vw;
+    }
+    .chart-desc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30%;
+    }  
+        .chart-desc span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }  
+        .chart-desc-box {
+            height: 0.8vw;
+            width: 0.8vw;
+            margin-right: 0.2vw;
+        }
