@@ -210,11 +210,11 @@ section {
     align-items: center;
     justify-content: space-around;
 }
-    #favorite img {
+    .arrow-img {
         margin-bottom: -0.2vw;
         height: 1.7vw;
     }
-    #favorite mark {
+    .mark {
         text-align: center;
         font-size: 1.7vw;
         background-color: white;
@@ -264,4 +264,11 @@ section {
             height: 0.8vw;
             width: 0.8vw;
             margin-right: 0.2vw;
+            border-radius: 0.2vw;
         }
+
+#profit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
