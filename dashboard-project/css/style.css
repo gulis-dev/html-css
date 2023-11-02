@@ -76,6 +76,7 @@ button {
     height: 3.7vw;
     border: none;
     background-color: var(--main);
+    cursor: pointer;
     
 }
 .avatar {
@@ -272,3 +273,30 @@ section {
     align-items: center;
     justify-content: space-around;
 }
+
+#progress1 {
+
+}
+.progress-bar {
+    display: flex;
+    background-color: grey;
+    height: 2vh;
+    width: 90%;
+    border-radius: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+}
+.progress-left {
+    height: 100%;
+    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 1vw;
+}    
+.progress-mid {
+    height: 100%;
+}    
+.progress-right {
+    height: 100%;
+    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 1vw;
+}    
