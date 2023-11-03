@@ -6,6 +6,8 @@
     --yellow: rgb(250, 232, 68, 0.6);
     --blue: rgba(20, 228, 228, 0.6);
     --gray: rgb(153, 153, 153);
+    --main2: rgba(0, 199, 199, 0.614);
+    --main3: rgba(0, 199, 199, 0.269);
 }
 
 *, *::before, *::after {
@@ -246,7 +248,7 @@ section {
     border-left: 2px solid var(--gray);
 }
     .chart-block {
-        width: 15%;
+        width: 12%;
         border-top-right-radius: 0.2vw;
         border-top-left-radius: 0.2vw;
     }
@@ -279,7 +281,6 @@ section {
 }
 .progress-bar {
     display: flex;
-    background-color: grey;
     height: 2vh;
     width: 90%;
     border-radius: 1vw;
