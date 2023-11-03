@@ -276,9 +276,6 @@ section {
     justify-content: space-around;
 }
 
-#progress1 {
-
-}
 .progress-bar {
     display: flex;
     height: 2vh;
@@ -300,4 +297,14 @@ section {
     height: 100%;
     border-bottom-right-radius: 1vw;
     border-top-right-radius: 1vw;
+}
+#subscribed {
+    display: flex;
+    flex-direction: column;
 }    
+    .sub-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0.2vw;
+    }
