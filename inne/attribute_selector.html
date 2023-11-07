@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: white;  
+        }
+        
+    </style>
+</head>
+<body>  
+    <style>
+        /*
+            Selektor atrybutu [attribute] wybierze
+            elementy mające dany atrybut
+        */
+
+        [data-red] {
+            background: red;
+        }
+        [data-green] { background: green; }
+        [data-blue] { background: blue; }
+
+        [data-color = "orange"] { background: orange; }
+        [data-color = "silver"] { background: silver; }
+    </style>
+    
+    <div data-red >Lorem ipsum dolor sit amet.</div>
+    <p data-green>Lorem ipsum dolor sit amet consectetur.</p>
+    <article data-blue>Lorem ipsum dolor sit.</article> 
+    <ul>
+        <li data-red="">Lorem, ipsum dolor.</li>
+        <li data-color="orange">Lorem, ipsum dolor.</li>
+        <li data-color="silver">Lorem, ipsum dolor.</li>
+    </ul>
+
+
+
+
+
+
+    
+    
+ 
+
+    
+
+    
+
+
+</body>
+</html>
