@@ -20,6 +20,22 @@
             elementy mające dany atrybut
         */
 
+        /*
+        [attribute *= "value"] - wybiera elementy jeśli
+                                 value gdziekolwiek jest 
+                                 w atrybucie, wielkość
+                                 liter ma znaczenie
+        [attribute ~= "value"] - value jest gdziekolwiek
+                                 w atrybucie, ale w fragmentach
+                                 oddzielonych spacjami
+        */ 
+
+        /*
+        [attribute ^= "value"] - wybiera elementy jeśli
+                                 value rozpoczyna atrybut
+        [attribute $= "value"] - value kończy atrybut 
+        */
+
         [data-red] {
             background: red;
         }
