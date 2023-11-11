@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            color: white;  
+        }
+        
+    </style>
+</head>
+<body>   
+    
+    <style> 
+        /*
+            Media Queries pozwalają na użycie określonych styli tylko
+            jeśli jest spełniony warunek np. minimalnej szerokości 
+            ekranu przeglądarki dzięki czemu możemy uzyskać układ
+            strony dostosowujący się do ekranu urządzenia
+        */
+
+        body {
+            font-size: 3rem;
+            background-color: silver;
+            color:black;
+        }
+
+        #breakpoint-info::after {
+            content: "breakpoint do 576px";
+        }
+
+        @media (min-width: 576px) {
+            body {
+                background-color: white;
+            }
+
+            #breakpoint-info::after {
+                content: "breakpoint 576px lub więcej - telefony";
+            }
+        }
+
+        @media (min-width: 768px) {
+            body {
+                background-color: yellow;
+            }
+
+            #breakpoint-info::after {
+                content: "breakpoint 768px lub więcej - telefony";
+            }
+        }
+
+        @media (min-width: 992px) {
+            body {
+                background-color: orange;
+            }
+
+            #breakpoint-info::after {
+                content: "breakpoint 992px lub więcej - telefony / tablety";
+            }
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                background-color: red;
+            }
+
+            #breakpoint-info::after {
+                content: "breakpoint 1200px lub więcej - tablety / laptopy";
+            }
+        }
+
+        @media (min-width: 1400px) {
+            body {
+                background-color: darkred;
+            }
+
+            #breakpoint-info::after {
+                content: "breakpoint 1400px lub więcej - komputery / laptopy";
+            }
+        }
+
+
+
+
+    </style> 
+
+    <span id="breakpoint-info"></span>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+</body>
+</html>
